@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2F257E11-B3E0-4F6D-ACEF-229D3886D47F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GsbCampagneGUI</RootNamespace>
+    <AssemblyName>GsbCampagneGUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAccueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccueil.Designer.cs">
+      <DependentUpon>FrmAccueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAjoutArtiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjoutArtiste.Designer.cs">
+      <DependentUpon>FrmAjoutArtiste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAjouterAgences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjouterAgences.Designer.cs">
+      <DependentUpon>FrmAjouterAgences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAjouterCourantArtiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjouterCourantArtiste.Designer.cs">
+      <DependentUpon>FrmAjouterCourantArtiste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAjouterEvenement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjouterEvenement.Designer.cs">
+      <DependentUpon>FrmAjouterEvenement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAjoutVip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjoutVip.Designer.cs">
+      <DependentUpon>FrmAjoutVip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAuthentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAuthentification.Designer.cs">
+      <DependentUpon>FrmAuthentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsulterEvenement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsulterEvenement.Designer.cs">
+      <DependentUpon>FrmConsulterEvenement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGererEvenement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGererEvenement.Designer.cs">
+      <DependentUpon>FrmGererEvenement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuArtiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuArtiste.Designer.cs">
+      <DependentUpon>FrmMenuArtiste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuCourantArtistes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuCourantArtistes.Designer.cs">
+      <DependentUpon>FrmMenuCourantArtistes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuVip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuVip.Designer.cs">
+      <DependentUpon>FrmMenuVip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListeArtiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListeArtiste.Designer.cs">
+      <DependentUpon>FrmListeArtiste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListeCourantArtistes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListeCourantArtistes.Designer.cs">
+      <DependentUpon>FrmListeCourantArtistes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListeVip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListeVip.Designer.cs">
+      <DependentUpon>FrmListeVip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuAgences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuAgences.Designer.cs">
+      <DependentUpon>FrmMenuAgences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuEvenements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuEvenements.Designer.cs">
+      <DependentUpon>FrmMenuEvenements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListeAgences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListeAgences.Designer.cs">
+      <DependentUpon>FrmListeAgences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGererAgences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGererAgences.Designer.cs">
+      <DependentUpon>FrmGererAgences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModifSuppArtiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModifSuppArtiste.Designer.cs">
+      <DependentUpon>FrmModifSuppArtiste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModifSuppVIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModifSuppVIP.Designer.cs">
+      <DependentUpon>FrmModifSuppVIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSupprimerCourantArtistique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSupprimerCourantArtistique.Designer.cs">
+      <DependentUpon>FrmSupprimerCourantArtistique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAfficherCampagnes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAfficherCampagnes.Designer.cs">
+      <DependentUpon>FrmAfficherCampagnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAfficherCategorieVIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAfficherCategorieVIP.Designer.cs">
+      <DependentUpon>FrmAfficherCategorieVIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAjouterCampagnes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjouterCampagnes.Designer.cs">
+      <DependentUpon>FrmAjouterCampagnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAjouterCategorieVIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAjouterCategorieVIP.Designer.cs">
+      <DependentUpon>FrmAjouterCategorieVIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGererCampagnes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGererCampagnes.Designer.cs">
+      <DependentUpon>FrmGererCampagnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGererCategorieVIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGererCategorieVIP.Designer.cs">
+      <DependentUpon>FrmGererCategorieVIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionCampagnes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionCampagnes.Designer.cs">
+      <DependentUpon>FrmGestionCampagnes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionCategorieVIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionCategorieVIP.Designer.cs">
+      <DependentUpon>FrmGestionCategorieVIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAccueil.resx">
+      <DependentUpon>FrmAccueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjoutArtiste.resx">
+      <DependentUpon>FrmAjoutArtiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjouterAgences.resx">
+      <DependentUpon>FrmAjouterAgences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjouterCourantArtiste.resx">
+      <DependentUpon>FrmAjouterCourantArtiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjouterEvenement.resx">
+      <DependentUpon>FrmAjouterEvenement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjoutVip.resx">
+      <DependentUpon>FrmAjoutVip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAuthentification.resx">
+      <DependentUpon>FrmAuthentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsulterEvenement.resx">
+      <DependentUpon>FrmConsulterEvenement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGererEvenement.resx">
+      <DependentUpon>FrmGererEvenement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuArtiste.resx">
+      <DependentUpon>FrmMenuArtiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuCourantArtistes.resx">
+      <DependentUpon>FrmMenuCourantArtistes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuVip.resx">
+      <DependentUpon>FrmMenuVip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListeArtiste.resx">
+      <DependentUpon>FrmListeArtiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListeCourantArtistes.resx">
+      <DependentUpon>FrmListeCourantArtistes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListeVip.resx">
+      <DependentUpon>FrmListeVip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuAgences.resx">
+      <DependentUpon>FrmMenuAgences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuEvenements.resx">
+      <DependentUpon>FrmMenuEvenements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListeAgences.resx">
+      <DependentUpon>FrmListeAgences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGererAgences.resx">
+      <DependentUpon>FrmGererAgences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModifSuppArtiste.resx">
+      <DependentUpon>FrmModifSuppArtiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModifSuppVIP.resx">
+      <DependentUpon>FrmModifSuppVIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSupprimerCourantArtistique.resx">
+      <DependentUpon>FrmSupprimerCourantArtistique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAfficherCampagnes.resx">
+      <DependentUpon>FrmAfficherCampagnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAfficherCategorieVIP.resx">
+      <DependentUpon>FrmAfficherCategorieVIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjouterCampagnes.resx">
+      <DependentUpon>FrmAjouterCampagnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAjouterCategorieVIP.resx">
+      <DependentUpon>FrmAjouterCategorieVIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGererCampagnes.resx">
+      <DependentUpon>FrmGererCampagnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGererCategorieVIP.resx">
+      <DependentUpon>FrmGererCategorieVIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionCampagnes.resx">
+      <DependentUpon>FrmGestionCampagnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionCategorieVIP.resx">
+      <DependentUpon>FrmGestionCategorieVIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GsbCampagneBLL\GsbCampagneBLL.csproj">
+      <Project>{5afd3bbb-0f41-4d33-8a6f-6056754aceed}</Project>
+      <Name>GsbCampagneBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GsbCampagneDAL\GsbCampagneDAL.csproj">
+      <Project>{5b4abb3d-0679-4a31-8d2e-eb5fdc8c1ee4}</Project>
+      <Name>GsbCampagneDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GsbCampagneBLL\GsbCampagneBLL.csproj">
+      <Project>{5afd3bbb-0f41-4d33-8a6f-6056754aceed}</Project>
+      <Name>GsbCampagneBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GsbCampagneDAL\GsbCampagneDAL.csproj">
+      <Project>{d619b918-f82a-4287-8bdd-a4b7fc73e189}</Project>
+      <Name>GsbCampagneDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+</Project>
